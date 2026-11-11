@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "tiktok_live_chat",
+  "version": "${version}",
+  "name": "TikTok Live Chat",
+  "description": "Tampilkan chat, gift, dan like TikTok Live langsung di dalam game Minecraft.",
+  "authors": ["eLzacky"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.tiktokchat.TikTokChatMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
