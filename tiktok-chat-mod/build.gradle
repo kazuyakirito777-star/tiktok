@@ -23,9 +23,18 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
     // Library TikTok Live (dibundel ke dalam jar mod lewat jar-in-jar)
+    implementation     // Library TikTok Live + dependensinya (dibundel lewat jar-in-jar)
     implementation "com.github.jwdeveloper.TikTok-Live-Java:Client:${project.tiktok_live_version}"
     include "com.github.jwdeveloper.TikTok-Live-Java:Client:${project.tiktok_live_version}"
-}
+
+    implementation "com.github.jwdeveloper.TikTok-Live-Java:API:${project.tiktok_live_version}"
+    include "com.github.jwdeveloper.TikTok-Live-Java:API:${project.tiktok_live_version}"
+
+    implementation "com.google.protobuf:protobuf-java:4.26.1"
+    include "com.google.protobuf:protobuf-java:4.26.1"
+
+    implementation "org.java-websocket:Java-WebSocket:1.5.5"
+    include "org.java-websocket:Java-WebSocket:1.5.5"
 
 processResources {
     inputs.property 'version', project.version
